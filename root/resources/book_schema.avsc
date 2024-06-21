@@ -1,0 +1,40 @@
+{
+    "type": "record",
+    "name": "Book",
+    "namespace": "kafka",
+    "fields": [
+        {
+            "name": "book_list",
+            "type": "string"
+        },
+        {
+            "name": "rank",
+            "type": "int"
+        },
+        {
+            "name": "rank_last_week",
+            "type": "int"
+        },
+        {
+            "name": "title",
+            "type": "string"
+        },
+        {
+            "name": "author",
+            "type": "string"
+        },
+        {
+            "name": "publisher",
+            "type": "string"
+        },
+        {
+            "name": "description",
+            "type": "string"
+        },
+        {
+            "name": "amazon_product_url",
+            "type": ["null", "string"],
+            "default": null
+        }
+    ]
+}

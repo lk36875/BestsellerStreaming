@@ -1,0 +1,26 @@
+{
+    "base_url": "https://api.nytimes.com/svc/books/v3/lists/current/",
+    "lists": [
+        "combined-print-and-e-book-fiction",
+        "combined-print-and-e-book-nonfiction",
+        "hardcover-fiction",
+        "hardcover-nonfiction",
+        "trade-fiction-paperback",
+        "mass-market-paperback",
+        "paperback-nonfiction",
+        "e-book-fiction",
+        "e-book-nonfiction",
+        "hardcover-advice",
+        "paperback-advice",
+        "advice-how-to-and-miscellaneous",
+        "hardcover-graphic-books",
+        "paperback-graphic-books",
+        "manga",
+        "combined-print-fiction",
+        "combined-print-nonfiction",
+        "young-adult",
+        "young-adult-e-book",
+        "young-adult-hardcover",
+        "young-adult-paperback"
+    ]
+}

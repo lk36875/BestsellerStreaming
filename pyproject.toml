@@ -1,0 +1,61 @@
+[tool.poetry]
+name = "KafkaStreaming"
+version = "0.1.0"
+description = ""
+authors = ["Łukasz Główka <glowka36875@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+black = "^24.1.1"
+flake8 = "^7.0.0"
+isort = "^5.13.2"
+flake8-pyproject = "^1.2.3"
+requests = "^2.31.0"
+confluent-kafka = "^2.3.0"
+pytest = "^8.0.0"
+requests-mock = "^1.11.0"
+azure-schemaregistry-avroencoder = "^1.0.0"
+azure-identity = "^1.16.0"
+fastavro = "^1.9.4"
+poetry-plugin-dotenv = "^0.8.4"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.black]
+line-length = 120
+target-version = ['py311']
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.git
+  | \.venv
+  | _build
+)/
+'''
+
+[tool.flake8]
+exclude = ".venv, .git"
+max-complexity = 10
+max-line-length = 120
+extend-ignore = """
+    W503,
+    E203,
+    E701,
+"""
+per-file-ignores = """
+    __init__.py: F401
+    ./src/*: E402
+"""
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
+include_trailing_comma = true
+force_grid_wrap = 0
+use_parentheses = true
+line_length = 120

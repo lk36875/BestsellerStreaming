@@ -1,0 +1,5 @@
+{
+    "base_url": "https://test.com/",
+    "api_key": "test_key",
+    "lists": ["test_list1", "test_list2"]
+}
